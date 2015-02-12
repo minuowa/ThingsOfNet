@@ -1,0 +1,16 @@
+#pragma once
+class ToSite
+{
+public:
+	ToSite(void);
+	~ToSite(void);
+
+	void start();
+
+	void accept();
+
+	void send(GString msg);
+
+	void onPKG(int pkgid);
+};
+

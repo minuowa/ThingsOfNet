@@ -1,0 +1,21 @@
+#pragma once
+typedef __int64 I64;
+typedef I64 IPV6;
+class TOThing
+{
+public:
+	TOThing(void);
+	~TOThing(void);
+
+	/** ¹ã²¥ **/
+	void boardcastMe();
+
+	bool connect(IPV6 ip,int port);
+
+	void send(GString msg);
+
+	int mClassID;
+	I64 mUniqueID;
+	GString mName;
+};
+
